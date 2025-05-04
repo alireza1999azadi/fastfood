@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from '../axios'
 import Loading from '../Loading/loading'
+
 function CategoryList() {
     const [categories, setCategories] = useState([])
     const [loading, setLoading] = useState(true)
