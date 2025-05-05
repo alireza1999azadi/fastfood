@@ -12,7 +12,7 @@ function App() {
 
   useEffect(()=>{
     const fetchData=async (categoryId=null)=>{
-      const response=await axios.get(`/FastFood/list/${categoryId?"categoryId="+categoryId:""}`)
+      const response=await axios.get(`/FastFood/list/${categoryId?"?categoryId="+categoryId:""}`)
       setFastFoodItem(response.data)
       setLoading(false)
     }
